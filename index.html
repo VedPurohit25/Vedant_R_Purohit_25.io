@@ -6,263 +6,198 @@
     <title>Vedant R. Purohit | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="VRPCSS.css">
+    <style>
+        .serif { font-family: 'DM Serif Display', serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+        .glass { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .bento-card { background: white; border-radius: 2rem; border: 1px solid #f1f5f9; transition: all 0.3s ease; }
+        .bento-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05); }
+    </style>
 </head>
-<body class="selection:bg-indigo-100">
+<body class="selection:bg-indigo-100 text-gray-800">
 
+    <!-- Navigation -->
     <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-        <div class="glass px-6 py-3 rounded-full flex gap-8 text-sm font-medium shadow-sm">
+        <div class="glass px-6 py-3 rounded-full flex gap-6 text-sm font-medium shadow-sm">
             <a href="#" class="hover:text-indigo-600 transition">Home</a>
-            <a href="#work" class="hover:text-indigo-600 transition">Work</a>
-            <a href="#contact" class="hover:text-indigo-600 transition">Connect</a>
+            <a href="#about" class="hover:text-indigo-600 transition">About</a>
+            <a href="#portfolio" class="hover:text-indigo-600 transition">Projects</a>
+            <a href="#education" class="hover:text-indigo-600 transition">Education</a>
+            <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 flex flex-col items-center text-center px-6">
-    <div class="relative mb-8">
-        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-emerald-500 rounded-full blur opacity-25"></div>
-        <img src="casual2.jpg" 
-             alt=" Vedant R. Purohit" 
-             class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-2xl object-cover">
-    </div>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
+        <div class="relative mb-8">
+            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-emerald-500 rounded-full blur opacity-25"></div>
+            <img src="casual2.jpg" alt="Vedant R. Purohit" class="relative w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-white shadow-2xl object-cover">
+        </div>
 
-    <div class="space-y-2">
-        <h1 class="serif text-5xl md:text-8xl tracking-tight text-[#2D2D2D]">
-             Vedant R. Purohit
-        </h1>
-        <p class="text-sm md:text-base font-medium uppercase tracking-[0.2em] text-indigo-600">
-            Founder of Vedant Enterprises 360
+        <div class="space-y-2">
+            <h1 class="serif text-5xl md:text-7xl tracking-tight text-[#2D2D2D]">Vedant Rajendra Purohit</h1>
+            <p class="text-sm md:text-base font-semibold uppercase tracking-[0.2em] text-indigo-600">Computer Engineer & Full-Stack Developer</p>
+        </div>
+
+        <p class="mt-6 max-w-2xl text-base md:text-lg text-gray-500 leading-relaxed font-light">
+            Passionate software engineer experienced in Core Java, Spring Boot microservices, Python ML models, and dynamic web architecture. Open to impactful technical roles.
         </p>
-    </div>
 
-    <p class="mt-8 max-w-2xl text-lg md:text-xl text-gray-500 leading-relaxed font-light">
-        Specializing in IT Solutions, Hardware/Software AMC, and Turnkey MEPL Projects. 
-        Delivering excellence through strategic infrastructure and digital innovation.
-    </p>
-
-    <div class="mt-12 flex flex-col sm:flex-row gap-4">
-        <a href="https://wa.me/918379988648" 
-           class="flex items-center justify-center gap-2 bg-[#25D366] text-white px-10 py-4 rounded-full font-semibold hover:scale-105 transition-transform shadow-xl shadow-green-100">
-            <span>Message on WhatsApp</span>
-        </a>
-        <a href="#work" 
-           class="px-10 py-4 rounded-full font-semibold border border-gray-300 hover:bg-white transition-colors">
-            Explore Portfolio
-        </a>
-    </div>
-</section>
-
-    
-
-    <section id="work" class="max-w-6xl mx-auto px-6 py-24">
-        <h2 class="serif text-4xl mb-12 text-center">Our Expertise</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bento-card md:col-span-2 p-10 flex flex-col justify-between min-h-[300px]">
-                <div>
-                    <span class="text-xs uppercase tracking-widest text-indigo-500 font-bold">Tech Division</span>
-                    <h3 class="text-3xl font-semibold mt-2">IT & Hardware Solutions</h3>
-                    <p class="mt-4 text-gray-500 max-w-md">Specializing in Web Technologies, Hardware, Software, and AMC Services for high-growth enterprises.</p>
-                </div>
-                <div class="mt-6 flex gap-2">
-                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Web Technologies</span>
-                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">SDE</span>
-                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Marketing and Business-stragies</span>
-                </div>
-            </div>
-
-            <div class="bento-card p-10 bg-indigo-600 text-white flex flex-col justify-center items-center text-center">
-                <h3 class="text-2xl font-semibold">Digital Presence</h3>
-                <p class="text-indigo-100 mt-2 text-sm">Managing brands across Instagram and Facebook.</p>
-                <a href="https://www.instagram.com/vedantenterprises25" class="mt-6 underline decoration-indigo-300">Follow on Instagram</a>
-            </div>
-
-            <div class="bento-card p-10 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-semibold"> Projects</h3>
-                    <p class="mt-2 text-sm text-gray-500">Civil, Electrical, and Plumbing (MEPL) projects tailored for IT/ITES companies.</p>
-                </div>
-            </div>
-            
-
-            <div id="contact" class="bento-card md:col-span-2 p-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="text-center md:text-left">
-                    <h3 class="text-3xl font-semibold">Ready to collaborate?</h3>
-                    <p class="text-gray-500 mt-2">Scan the QR or click to get my number directly.</p>
-                    <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-                        <a href="https://www.linkedin.com/in/vedant-purohit-b53442211" class="text-indigo-600 font-medium">LinkedIn →</a>
-                        <a href="https://aratt.ai/user/@wishvedhpurohit25" class="text-indigo-600 font-medium">Aratt AI →</a>
-                    </div>
-                </div>
-                <div class="p-4 bg-gray-50 rounded-3xl border border-dashed border-gray-300">
-                    <img src="whatsapp7624.jpeg" alt="WhatsApp QR" class="w-32 h-32 opacity-50">
-                    <p class="text-[10px] text-center mt-2 text-gray-400">QR CODE</p>
-                </div>
-            </div>
+        <!-- Main CTAs -->
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/918010927624" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-3.5 rounded-full font-semibold hover:scale-105 transition-transform shadow-lg shadow-green-100">
+                <span>WhatsApp (+91 8010927624)</span>
+            </a>
+            <a href="https://github.com/VedPurohit25" target="_blank" class="px-8 py-3.5 rounded-full font-semibold bg-gray-900 text-white hover:bg-gray-800 transition-colors shadow-md">
+                GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/vedant-purohit-b53442211" target="_blank" class="px-8 py-3.5 rounded-full font-semibold border border-gray-300 hover:bg-white transition-colors">
+                LinkedIn Profile
+            </a>
         </div>
     </section>
-    <section id="portfolio" class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-200/50">
+
+    <!-- Work & Skills Overview -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-200/50">
+        <h2 class="serif text-4xl mb-12 text-center">Skills & Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bento-card md:col-span-2 p-8 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-indigo-500 font-bold">Professional Experience</span>
+                    <h3 class="text-2xl font-semibold mt-2">Senior Manager | Family Business</h3>
+                    <p class="text-xs text-gray-400 mb-4">Pune, MH (Dec 2024 – April 2026)</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Streamlined day-to-day operations, procurement, inventory management, and accounts. Integrated digital workflow tools for optimal tracking and client communication.
+                    </p>
+                </div>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Operations</span>
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Strategic Planning</span>
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Vendor Management</span>
+                </div>
+            </div>
+
+            <div class="bento-card p-8 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white flex flex-col justify-between">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-indigo-200 font-bold">Tech Stack</span>
+                    <h3 class="text-2xl font-semibold mt-2">Core Competencies</h3>
+                    <ul class="text-indigo-100 text-sm mt-4 space-y-2">
+                        <li>• Java (Core), Python, JavaScript</li>
+                        <li>• Spring Boot, REST APIs, Microservices</li>
+                        <li>• React, Streamlit, ResNet, TensorFlow</li>
+                        <li>• AWS, Docker, Git/GitHub, System Design</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="portfolio" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-200/50">
         <div class="text-center mb-16">
-            <h2 class="serif text-4xl md:text-5xl mb-4">Featured Projects</h2>
-            <p class="text-gray-500 uppercase tracking-widest text-sm">Technical Innovation & Academic Research</p>
+            <h2 class="serif text-4xl md:text-5xl mb-4">Featured Technical Projects</h2>
+            <p class="text-gray-500 uppercase tracking-widest text-sm">Systems, AI & Web Architecture</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- API Gateway Project -->
             <div class="bento-card p-8 flex flex-col justify-between min-h-[340px]">
                 <div>
-                    <div class="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">🤖</div>
-                    <h3 class="text-xl font-bold mb-3">AI-Powered E-Commerce</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Advanced recommendation system utilizing <strong>ResNet</strong> and <strong>TensorFlow</strong> to suggest products via visual data analysis[cite: 1, 3].</p>
+                    <div class="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">⚡</div>
+                    <h3 class="text-xl font-bold mb-3">API Gateway & Rate Limiter</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Engineered a robust API Gateway using Java & Spring Boot with custom token bucket / sliding window rate limiting logic to throttle microservice traffic.
+                    </p>
                 </div>
                 <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase">Python</span>
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase">Deep Learning</span>
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase">Java</span>
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase">Spring Boot</span>
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase">Microservices</span>
                 </div>
             </div>
 
+            <!-- AI Recommendation -->
             <div class="bento-card p-8 flex flex-col justify-between min-h-[340px]">
                 <div>
-                    <div class="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">💻</div>
-                    <h3 class="text-xl font-bold mb-3">Web Intelligence Portfolio</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">A suite of high-performance apps including <strong>Analog Clocks</strong>, <strong>Piano Players</strong>, and <strong>E-commerce clones</strong> built with pure JS[cite: 1, 3].</p>
+                    <div class="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">🤖</div>
+                    <h3 class="text-xl font-bold mb-3">AI E-Commerce Engine</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Designed an image-matching recommendation engine utilizing ResNet, TensorFlow, and Python with an interactive Streamlit visual UI.
+                    </p>
                 </div>
                 <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase">JavaScript</span>
-                    <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase">Frontend</span>
+                    <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase">Python</span>
+                    <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase">ResNet</span>
+                    <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase">Streamlit</span>
                 </div>
             </div>
 
+            <!-- Web Suite -->
             <div class="bento-card p-8 flex flex-col justify-between min-h-[340px]">
                 <div>
-                    <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">📄</div>
-                    <h3 class="text-xl font-bold mb-3">IJRASET Publication</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Published research titled <strong>"Growth of E-Commerce and Rural India"</strong> (June 2024)[cite: 1, 3].</p>
+                    <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">💻</div>
+                    <h3 class="text-xl font-bold mb-3">Web Application Suite</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Responsive web applications including Analog Clocks, Calculators, Interactive Piano Players, and E-commerce site clones built with Vanilla JS.
+                    </p>
                 </div>
                 <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-[10px] font-bold uppercase">Market Research</span>
-                    <span class="px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-[10px] font-bold uppercase">Journal</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-[10px] font-bold uppercase">JavaScript</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-[10px] font-bold uppercase">HTML5/CSS3</span>
                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education & Research Section -->
+    <section id="education" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-200/50">
+        <h2 class="serif text-4xl mb-12 text-center">Academic Background & Publications</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-8">
+                <span class="text-xs uppercase tracking-widest text-indigo-500 font-bold">Graduation</span>
+                <h3 class="text-2xl font-bold mt-2">B.Tech in Computer Engineering</h3>
+                <p class="text-gray-600 text-sm mt-1">DY Patil University, Pune (2021 – 2024)</p>
+                <div class="mt-4 inline-block px-4 py-2 bg-indigo-50 text-indigo-700 rounded-xl font-bold text-sm">
+                    CGPA: 8.19 / 10.0
+                </div>
+            </div>
+
+            <div class="bento-card p-8">
+                <span class="text-xs uppercase tracking-widest text-orange-500 font-bold">Journal Publication</span>
+                <h3 class="text-2xl font-bold mt-2">"Growth of E-Commerce and Rural India"</h3>
+                <p class="text-gray-600 text-sm mt-1">IJRASET International Journal (June 2024)</p>
+                <p class="text-gray-500 text-xs mt-3">Research paper analyzing digital penetration and commerce trends across rural markets.</p>
             </div>
         </div>
     </section>
 
-    <section id="about" class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-200/50">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        
-        <div class="relative">
-            <div class="aspect-square rounded-[2rem] overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl">
-                <img src="my1.jpeg" alt="Prof. Vedant" class="w-full h-full object-cover">
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-200/50">
+        <div class="bento-card p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-semibold">Let's Connect & Collaborate</h3>
+                <p class="text-gray-500 mt-2 text-sm">Scan the QR code to save my contact info directly on WhatsApp.</p>
+                <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start text-sm">
+                    <a href="mailto:purohitvedant2501@gmail.com" class="text-indigo-600 font-medium hover:underline">purohitvedant2501@gmail.com →</a>
+                    <a href="https://github.com/VedPurohit25" target="_blank" class="text-indigo-600 font-medium hover:underline">GitHub →</a>
+                    <a href="https://www.linkedin.com/in/vedant-purohit-b53442211" target="_blank" class="text-indigo-600 font-medium hover:underline">LinkedIn →</a>
+                </div>
             </div>
-            <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block">
-                <p class="text-3xl font-bold text-indigo-600">5+</p>
-                <p class="text-xs uppercase tracking-widest text-gray-400">Years Excellence</p>
-            </div>
-        </div>
-
-        <div class="space-y-6">
-            <h2 class="serif text-4xl md:text-5xl">Software Development and Architecting Digital & Physical Landscapes.</h2>
-            
-            <p class="text-gray-600 leading-relaxed">
-                I am <span class="font-semibold text-gray-900"> Vedant R. Purohit</span>, an entrepreneur and technical specialist dedicated to delivering high-impact solutions through <span class="italic">Vedant Enterprises 360</span>. My work exists at the intersection of robust infrastructure and modern technology.
-            </p>
-
-            <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                    <span class="text-indigo-500 mt-1">✦</span>
-                    <span><strong>Technical Leadership:</strong> Specialized in Raspberry Pi systems, comprehensive IT hardware solutions, and Software AMC.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-indigo-500 mt-1">✦</span>
-                    <span><strong>Infrastructure Expertise:</strong> Managing large-scale turnkey MEPL (Mechanical, Electrical, Plumbing, and Landscaping) projects for top-tier IT/ITES companies.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-indigo-500 mt-1">✦</span>
-                    <span><strong>Digital Strategy:</strong> Crafting brand presence across LinkedIn, Instagram, and Facebook to drive business growth.</span>
-                </li>
-            </ul>
-
-            <div class="pt-6">
-                <a href="https://www.linkedin.com/in/vedant-purohit-b53442211" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-indigo-600 transition">
-                    View Professional History on LinkedIn →
-                </a>
+            <div class="p-4 bg-emerald-500/10 rounded-3xl border border-emerald-500/20 text-center">
+                <img src="WhatsApp Image 2026-08-31 at 7.45.37 PM.jpeg" alt="Er. VedRPurohit WhatsApp QR Code" class="w-40 h-auto rounded-2xl shadow-md mx-auto">
+                <p class="text-[11px] font-semibold text-emerald-700 mt-2">Scan for WhatsApp</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="services" class="max-w-6xl mx-auto px-6 py-24">
-    <div class="text-center mb-16">
-        <h2 class="serif text-4xl md:text-5xl mb-4">Core Expertise</h2>
-        <p class="text-gray-500 uppercase tracking-widest text-sm">Comprehensive Solutions by Vedant Enterprises 360</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-shadow">
-            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 text-indigo-600 font-bold text-xl">IT</div>
-            <h3 class="text-xl font-bold mb-3">IT & Hardware Solutions</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Providing optimized IT infrastructure solutions, strategic hardware/software procurement, and dedicated annual maintenance contracts (AMC) to ensure the technical sovereignty of modern offices.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-shadow">
-            <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 text-emerald-600 font-bold text-xl">MEP</div>
-            <h3 class="text-xl font-bold mb-3">Turnkey MEPL Projects</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Executing Civil, Electrical, Plumbing, and Landscaping projects specifically tailored for IT/ITES and commercial sectors.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-shadow">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6 text-orange-600 font-bold text-xl">DM</div>
-            <h3 class="text-xl font-bold mb-3">Digital Brand Strategy</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Leveraging Instagram, Facebook, and LinkedIn platforms to drive brand visibility and strategic digital growth.</p>
-        </div>
-        <div class="bg-white p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-shadow">
-            <div class="w-17 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 text-purple-600 font-bold text-xl">Education</div>
-            <h3 class="text-xl font-bold mb-3">Technical Curriculum Design & Skill Transformation</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Designing comprehensive technical training modules and instruction methodologies (including the Ancient-Indic Science Method) for academic institutions and corporate teams to bridge the gap between theoretical computer science and industry-ready engineering.</p>
-        </div>
-        <div class="bg-white p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-shadow">
-            <div class="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center mb-6 text-brown-600 font-bold text-xl">SME</div>
-            <h3 class="text-xl font-bold mb-3">Specialized Technical Content & Curriculum Architecture</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Providing high-fidelity technical documentation and curriculum design for complex Computer Science domains. As an SME, I specialize in translating intricate JVM architectures, memory management protocols, and Algorithmic logic into structured, high-impact learning assets.
-                 I ensure that technical content is not just informative but architecturally sound, enabling deeper retention and industry-aligned mastery.</p>
-        </div>
-        <div class="bg-white p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-shadow">
-            <div class="w-15 h-12 bg-pink-50 rounded-xl flex items-center justify-center mb-6 text-red-600 font-bold text-xl">Trainee</div>
-            <h3 class="text-xl font-bold mb-3">Advanced Engineering Mentorship</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Leading technical training programs that move beyond rote memorization toward the derivation-based understanding of programming. I specialize in training aspiring SDEs and engineering students in Java, Data Structures, and System Logic by deconstructing concepts to their root level. My training methodology focuses on building 'Architectural Thinking,' empowering learners to write optimized, industrial-grade code with absolute clarity.</p>
-        </div>
-    </div>
-</section>
-    
-
-<section class="max-w-6xl mx-auto px-6 py-24 bg-indigo-900 rounded-[3rem] text-white overflow-hidden relative">
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-            <h2 class="serif text-4xl md:text-5xl mb-6">Open to New Professional Horizons.</h2>
-            <p class="text-indigo-100 text-lg mb-8 leading-relaxed">
-                While I lead Vedant Enterprises, I am always looking to collaborate or take on professional roles where my technical expertise in IT management and infrastructure projects can add significant value. 
-            </p>
-            <div class="flex flex-wrap gap-4">
-                <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">IT Manager</span>
-                <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">Project Consultant</span>
-                <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">Facility Operations</span>
-                 <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">Subject Matter Expert</span>
-                  <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">Software Trainer</span>
-                   <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">Assistant Professor</span>
-                    <span class="px-4 py-2 bg-indigo-800/50 rounded-full border border-indigo-700 text-sm font-medium">Research Analyst</span>
-            </div>
-        </div>
-        <div class="bg-white/10 p-10 rounded-3xl backdrop-blur-md border border-white/10">
-            <h4 class="text-xl font-bold mb-4">Let's discuss a role</h4>
-            <p class="text-indigo-200 mb-6 text-sm">If you are looking for a professional with a blend of technical skills and leadership experience, let's connect.</p>
-            <a href="https://www.linkedin.com/in/vedant-purohit-b53442211" class="block text-center bg-white text-indigo-900 py-4 rounded-2xl font-bold hover:bg-indigo-50 transition-colors">
-                Connect on LinkedIn
-            </a>
-        </div>
-    </div>
-</section>
-
+    <!-- Footer -->
     <footer class="py-12 text-center text-gray-400 text-xs border-t border-gray-200">
-        <p>© 2021 Vedant Rajendra Purohit 24/7. All Rights Reserved.</p>
+        <p>© 2026 Vedant Rajendra Purohit. All Rights Reserved.</p>
     </footer>
 
 </body>
